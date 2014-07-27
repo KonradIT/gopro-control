@@ -5,7 +5,7 @@ GoPro Wifi controller inside the gopro
 
 ##How to:
 
-1. [Click here to download this repo]
+1. [Click here to download this repo](https://github.com/KonradIT/gopro-control/archive/GoProControl.zip)
 2. Unzip the GoProControl.zip file
 3. Copy index.html and autoexec.ash to your SD card
 4. Turn gopro on, wait 4 seconds, turn wifi on in app mode
