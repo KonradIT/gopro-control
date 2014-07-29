@@ -16,7 +16,9 @@ GoPro Wifi controller inside the gopro
 
 #To Do:
 [X] One Autoexec.ash for all, remove extra steps
+
 [ ] Fix index.html to parse the Version/Model to show only appropriate options
+
 [ ]	Preview ?
 
 
