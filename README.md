@@ -28,4 +28,11 @@ GoPro Wifi controller inside the gopro
 
 
 #Demo:
+
+###Mac:
 ![Wifi Controller Interface](Interface.png)
+
+---
+
+###Ubuntu:
+![interface on linux](http://i.imgur.com/rdDLCaS.png)
