@@ -13,3 +13,5 @@ t app fp_show 4
 sleep 2
 t app led red_front off
 t app fp_string 'DONE'
+sleep 4
+t app appmode video
