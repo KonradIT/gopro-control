@@ -9,8 +9,8 @@ GoPro Wifi controller inside the gopro
 2. Unzip the GoProControl.zip file
 3. Copy index.html and autoexec.ash to the root your GoPro SD card (where DCIM and MISC are)
 4. Insert card back into the gopro, **turn wifi on first and then turn on the gopro**
-5. Wait until it says "DONE" and the camera goes to video mode
-6. Connect to the GoPro wifi with your device (computer/iPhone/raspberry pi/etc)
+5. You will see that the red front LED stays bright, wait till the led turns off
+6. Then connect to the GoPro wifi with your device (computer/iPhone/raspberry pi/etc)
 7. Go to 10.5.5.9:8080/live in your browser, type your wifi password and start controlling
 
 
@@ -30,7 +30,7 @@ GoPro Wifi controller inside the gopro
 #Demo:
 
 ###Mac:
-![Wifi Controller Interface](Interface.png)
+![Wifi Controller Interface](http://i.imgur.com/Bd86u0i.png)
 
 ---
 
