@@ -25,7 +25,7 @@ GoPro Wifi controller inside the gopro
 
 [ ] Show camera modes, resolutions, etc... 
 
-[ ] Make a dir in var/www or something that its not live or videos (both dirs are needed for the controller)
+~~[X] Make a dir in var/www or something that its not live or videos (both dirs are needed for the controller)~~
 
 [ ] Write a tcp_tuner.sh version.
 
