@@ -19,7 +19,9 @@ GoPro Wifi controller inside the gopro
  * Go to gopro.com/update and download the update files for your GoPro
  * Insert card back into the gopro
  * Wait until the firmware update finishes
+
 ---
+
  * ###After the firmware update:
  * Then turn the wifi on
  * Then connect to the GoPro wifi with your device (computer/iPhone/raspberry pi/etc)
