@@ -1,0 +1,129 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on http://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>GoPro Control</title>
+  <meta name="description" content="GoPro Wifi controller inside the gopro">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">GoPro Control</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">GoPro Wifi controller inside the gopro</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/KonradIT/gopro-control/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/KonradIT/gopro-control/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/KonradIT/gopro-control" class="code">View GoPro Control on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a name="gopro-control" class="anchor" href="#gopro-control"><span class="octicon octicon-link"></span></a>GoPro Control</h1>
+
+<p>GoPro Wifi controller inside the gopro</p>
+
+<h2>
+<a name="how-to" class="anchor" href="#how-to"><span class="octicon octicon-link"></span></a>How to:</h2>
+
+<ol>
+<li><a href="https://github.com/KonradIT/gopro-control/archive/GoProControl.zip">Click here to download this repo</a></li>
+<li>Unzip the GoProControl.zip file</li>
+<li>
+<strong>If you want a temporary controller (you can delete the file and the controller will not show up)</strong>
+
+<ul>
+<li>Copy index.html and autoexec.ash to the root your GoPro SD card (where DCIM and MISC are)</li>
+<li>Insert card back into the gopro, <strong>turn wifi on first and then turn on the gopro</strong>
+</li>
+<li>You will see that the red front LED stays bright, wait till the led turns off</li>
+<li>Then connect to the GoPro wifi with your device (computer/iPhone/raspberry pi/etc)</li>
+<li>Go to 10.5.5.9:8080/live in your browser, type your wifi password and start controlling</li>
+</ul>
+</li>
+<li>
+<strong>If you want a permanent controller (you can use the function Delete all from the gopro and the controller still will be there)</strong>
+
+<ul>
+<li>Copy index.html to the root your GoPro SD card (where DCIM and MISC are)</li>
+<li>Copy tcp_tuner.sh to the MISC folder</li>
+<li>Go to gopro.com/update and download the update files for your GoPro</li>
+<li>Insert card back into the gopro</li>
+<li>Wait until the firmware update finishes</li>
+</ul>
+</li>
+</ol><hr><ul>
+<li><strong>After the firmware update:</strong></li>
+<li>Then turn the wifi on</li>
+<li>Then connect to the GoPro wifi with your device (computer/iPhone/raspberry pi/etc)</li>
+<li>Go to 10.5.5.9:8080/live in your browser, type your wifi password and start controlling</li>
+</ul><h1>
+<a name="to-do" class="anchor" href="#to-do"><span class="octicon octicon-link"></span></a>To Do:</h1>
+
+<p>[X] One Autoexec.ash for all, remove extra steps</p>
+
+<p>[ ] Fix version.txt iframe to parse the Version/Model to show only appropriate options</p>
+
+<p>[ ] Preview (currently not possible with temporary controller, only with permanent controller)</p>
+
+<p>[X] Responsive</p>
+
+<p>[ ] Show camera modes, resolutions, etc... </p>
+
+<p><del>[X] Make a dir in var/www or something that its not live or videos (both dirs are needed for the controller)</del></p>
+
+<p>[X] Write a tcp_tuner.sh version.</p>
+
+<h1>
+<a name="demo" class="anchor" href="#demo"><span class="octicon octicon-link"></span></a>Demo:</h1>
+
+<h3>
+<a name="mac" class="anchor" href="#mac"><span class="octicon octicon-link"></span></a>Mac:</h3>
+
+<p>(<img src="http://i.imgur.com/Bd86u0i.png" alt="Wifi controller mac">)</p>
+
+<hr><h3>
+<a name="ubuntu" class="anchor" href="#ubuntu"><span class="octicon octicon-link"></span></a>Ubuntu:</h3>
+
+<p>(<img src="http://i.imgur.com/rdDLCaS.png" alt="interface on linux">)</p>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/KonradIT" class="avatar"><img src="https://avatars2.githubusercontent.com/u/5891284?v=1&amp;s=60" width="48" height="48"></a> <a href="https://github.com/KonradIT">KonradIT</a> maintains <a href="https://github.com/KonradIT/gopro-control">GoPro Control</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="http://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/KonradIT/gopro-control/tarball/master" class="tar">tar</a><a href="https://github.com/KonradIT/gopro-control/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
