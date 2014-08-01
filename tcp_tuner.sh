@@ -1,1 +1,1 @@
-cp /tmp/fuse_a/index.html /tmp/live/
+cp /tmp/fuse_d/index.html /tmp/live/
