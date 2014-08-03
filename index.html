@@ -1,9 +1,13 @@
 <!DOCTYPE html><!--HTML5 doctype-->
 <html>
 <head>
+  
 <style>
 @media only screen and (max-device-width: 480px) {
-body{
+#content2{
+  width:100%;
+  }
+  body{
 background: #707070;
 background: -moz-linear-gradient(top, #707070 0%, #00c3ff 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#707070), color-stop(100%,#00c3ff));
@@ -76,6 +80,13 @@ height: -webkit-fit-content;
 height: -moz-fit-content;
 height: fit-content;
 }
+  #content2{
+  visibility:hidden;
+ width:10%;
+  height:10;
+  position:fixed;
+  
+  }
 </style>
 	<title>GoPro Control</title>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
@@ -114,7 +125,7 @@ height: fit-content;
 				xhr.open('GET','http://10.5.5.9:80/'+device+'/'+app+'?t='+document.getElementById('wifiPassword').value+'&p='+command);
 				xhr.send(null);
 			}
-		</script>
+  </script>
 </head>
 <body>
 
@@ -149,6 +160,7 @@ height: fit-content;
           &nbsp;<button onclick="command('camera','PV','%00')">Off</button>   </div>                
       
 <hr>
+  <div id="content">
 <table>
 <tr><td>Video resolution HERO3+Black</td><td><select><option selected="selected">SELECT</option>
   <option onclick="command('camera','VV','%06')">4K</option>
@@ -345,8 +357,14 @@ height: fit-content;
                       
 
 </table>
+  </div>
+  <div id="content2"><table><tr><td>Video resolution HERO3+Black</td></tr><tr><td><button onclick="command('camera','VV','%06')">4K</button><br><br><button onclick="command('camera','VV','%08')">4K 17:9</button><br><br><button onclick="command('camera','FS','%01')">4K 15FPS</button><br><br><button onclick="command('camera','FS','%00')">4K 12FPS</button><br><br><button onclick="command('camera','VV','%07')">2K</button><br><br><button onclick="command('camera','VV','%05')">2.7k</button><br><br><button onclick="command('camera','FS','%02')">2.7k 24FPS</button><br><br><button onclick="command('camera','FS','%04')">2.7k 30FPS</button><br><br><button onclick="command('camera','VV','%04')">1440p</button><br><br><button onclick="command('camera','FS','%05')">1440 48FPS</button><br><br><button onclick="command('camera','VV','%09')">1080 SuperView</button><br><br><button onclick="command('camera','VV','%03')">1080</button><br><br><button onclick="command('camera','VV','%02)">960p</button><br><br><button onclick="command('camera','VV','%0a')">720 SuperView</button><br><br><button onclick="command('camera','VV','%01')">720p</button><br><br></td></tr><tr><td>Auto Low Light HERO3+ Black</td></tr><tr><td><button onclick="command('camera','LW','%01')">ON</button><br><br><button onclick="command('camera','LW','%00')">OFF</button><br><br></td></tr> <tr><td>Video Resolution HERO3 Black:</td></tr><tr><td><button onclick="command('camera','VV','%08')">4KCin12FPS</button><br><br><button onclick="command('camera','VV','%06')">4K15FPS</button><br><br><button onclick="command('camera','VV','%07')">2.7kCin24FPS</button><br><br><button onclick="command('camera','VV','%05')">2.7k30FPS</button><br><br><button onclick="command('camera','VV','%04')">1440p48FPS</button><br><br><button onclick="command('camera','VV','%03')">1080 60FPS</button><br><br><button onclick="command('camera','VR','%05')">1080 30FPS</button><br><br><button onclick="command('camera','VR','%06')">960 48FPS</button><br><br><button onclick="command('camera','VV','%02')">960 100FPS</button><br><br><button onclick="command('camera','VV','%01')">720 120FPS</button><br><br><button onclick="command('camera','VV','%00')">WVGA 240FPS</button><br><br></td></tr><tr><td>Video resolution HERO2 and HERO3 Silver</td></tr><tr><td><button onclick="command('camera','VR','%06')">1080 30FPS</button><br><br><button onclick="command('camera','VR','%05')">960 48FPS</button><br><br><button onclick="command('camera','VR','%04')">960 30FPS</button><br><br> <button onclick="command('camera','VR','%03')">720 60FPS</button><br><br><button onclick="command('camera','VR','%02')">720 30FPS</button><br><br><button onclick="command('camera','VR','%01')">WVGA 120FPS</button><br><br><button onclick="command('camera','VR','%00')">WVGA 60FPS</button><br><br></td></tr><tr><td>Video Protune resolutions Black ed: ONLY IF PROTUNE ON</td></tr><tr><td><button onclick="command('camera','PT','%01')">Protune ON</button><br><br><button onclick="command('camera','VV','%00')">720 120T</button><br><br><button onclick="command('camera','VV','%02')">960 100T</button><br><br><button onclick="command('camera','VV','%03')">1080 60T</button><br><br><button onclick="command('camera','VV','%04')">1440 48T</button><br><br><button onclick="command('camera','VV','%05')">2.7k 30T</button><br><br><button onclick="command('camera','VV','%07')">2.7kCin 24T</button><br><br><button onclick="command('camera','VV','%06')">4k 15T</button><br><br><button onclick="command('camera','VV','%08')">4kCin 12T</button><br><br></td></tr> <tr><td>Video Protune resolutions HERO2 and HERO3 Silver</td></tr><tr><td> <button onclick="command('camera','VR','%09')">960 60T</button><br><br> <button onclick="command('camera','VR','%11')">1080 25T</button><br><br> <button onclick="command('camera','VR','%08')">1080 24T</button><br><br> <button onclick="command('camera','VR','%09')">1080 60T</button><br><br></td></tr> <tr><td>White Balance (HERO3) Protune ON ONLY:</td></tr><tr><td> <button onclick="command('camera','PT','%01')">Protune ON</button><br><br> <button onclick="command('camera','WB','%00')">AUTO</button><br><br><button onclick="command('camera','WB','%01')">3000k</button><br><br><button onclick="command('camera','WB','%02')">5500k</button><br><br><button onclick="command('camera','WB','%03')">6500k</button><br><br><button onclick="command('camera','WB','%04')">CAM RAW</button><br><br></td></tr> <tr><td>Auto Low Light (HERO3+Black)</td></tr><tr><td><button onclick="command('camera','LW','%00')">OFF</button><br><br> <button onclick="command('camera','LW','%01')">ON</button><br><br></td></tr> <tr><td>Orientation:</td></tr><tr><td> <button onclick="command('camera','UP','%00')">Up</button><br><br><button onclick="command('camera','UP','%01')">Down</button><br><br></td></tr> <tr><td>FOV:</td></tr><tr><td> <button onclick="command('camera','FV','%00')">wide</button><br><br><button onclick="command('camera','FV','%01')">medium</button><br><br><button onclick="command('camera','FV','%02')">narrow</button><br><br></td></tr><tr><td>Photo Definition HERO2 / HERO3 Silver:</td></tr><tr><td> <button onclick="command('camera','PR','%00')">11mp wide</button><br><br><button onclick="command('camera','PR','%01')">8mp medium</button><br><br><button onclick="command('camera','PR','%02')">5mp wide</button><br><br><button onclick="command('camera','PR','%03')">5mp medium</button><br><br></td></tr> <tr><td>Photo Definition HERO3 Black:</td></tr><tr><td> <button onclick="command('camera','PR','%05')">12mp wide</button><br><br><button onclick="command('camera','PR','%06')">7mp medium</button><br><br><button onclick="command('camera','PR','%04')">7mp wide</button><br><br><button onclick="command('camera','PR','%03')">5mp medium</button><br><br></td></tr><tr><td>Timelapse Interval:</td></tr><tr><td> <button onclick="command('camera','TI','%00')">0,5sec</button><br><br><button onclick="command('camera','TI','%01')">1sec</button><br><br><button onclick="command('camera','TI','%02')">2sec</button><br><br><button onclick="command('camera','TI','%05')">5sec</button><br><br><button onclick="command('camera','TI','%0a')">10sec</button><br><br><button onclick="command('camera','TI','%1e')">30sec</button><br><br><button onclick="command('camera','TI','%3c')">60sec</button><br><br></td></tr><tr><td>Volume:</td></tr><tr><td> <button onclick="command('camera','BS','%00')">0%</button><br><br><button onclick="command('camera','BS','%01')">70%</button><br><br><button onclick="command('camera','BS','%02')">100%</button><br><br></td></tr><tr><td>Loop video (HERO3):</td></tr><tr><td> <button onclick="command('camera','LO','%00')">OFF</button><br><br><button onclick="command('camera','LO','%01')">5Min</button><br><br><button onclick="command('camera','LO','%02')">20Min</button><br><br><button onclick="command('camera','LO','%03')">60Min</button><br><br><button onclick="command('camera','LO','%04')">MAX</button><br><br></td></tr> <tr><td>Protune:</td></tr><tr><td> <button onclick="command('camera','PT','%00')">OFF</button><br><br><button onclick="command('camera','PT','%01')">On</button><br><br></td></tr> <tr><td>LEDs:</td></tr><tr><td> <button onclick="command('camera','LB','%00')">No leds</button><br><br><button onclick="command('camera','LB','%01')">2 Leds</button><br><br><button onclick="command('camera','LB','%02')">4 Leds</button><br><br></td></tr> <tr><td>Spot meter:</td></tr><tr><td> <button onclick="command('camera','EX','%00')">Off</button><br><br><button onclick="command('camera','EX','%01')">ON </button><br><br></td></tr><tr><td>One Button Mode:</td></tr><tr><td><button onclick="command('camera','OB','%00')">Off</button><br><br> <button onclick="command('camera','OB','%01')">ON </button><br><br></td></tr><tr><td>Autopower off:</td></tr><tr><td><button onclick="command('camera','AO','%00')">Never</button><br><br> <button onclick="command('camera','AO','%01')">60s</button><br><br> <button onclick="command('camera','AO','%02')">120s </button><br><br> <button onclick="command('camera','AO','%03')">300s </button><br><br></td></tr><tr><td>Default mode:</td></tr><tr><td><button onclick="command('camera','DM','%00')">Video</button><br><br> <button onclick="command('camera','DM','%01')">Photo</button><br><br> <button onclick="command('camera','DM','%02')">Burst </button><br><br> <button onclick="command('camera','DM','%03')">Timelapse </button><br><br></td></tr><tr><td>Onscreen display:</td></tr><tr><td><button onclick="command('camera','OS','%00')">Off</button><br><br> <button onclick="command('camera','OS','%01')">On</button><br><br></td></tr><tr><td>Locate:</td></tr><tr><td><button onclick="command('camera','LL','%00')">Stop</button><br><br> <button onclick="command('camera','LL','%01')">Start</button><br><br></td></tr><tr><td>Video Mode:</td></tr><tr><td><button onclick="command('camera','VM','%00')">NTSC</button><br><br> <button onclick="command('camera','VM','%01')">PAL</button><br><br></td></tr> <tr><td>Continuous Shot (HERO3):</td></tr><tr><td> <button onclick="command('camera','CS','%00')">Single</button><br><br> <button onclick="command('camera','CS','%03')">3SPS</button><br><br> <button onclick="command('camera','CS','%05')">5SPS</button><br><br> <button onclick="command('camera','CS','%0a')">10SPS</button><br><br></td></tr><tr><td>Burst Rate (Black Ed):</td></tr><tr><td> <button onclick="command('camera','BU','%00')">3/1s</button><br><br><button onclick="command('camera','BU','%02')">10/1s</button><br><br><button onclick="command('camera','BU','%03')">10/2s</button><br><br><button onclick="command('camera','BU','%04')">30/1s</button><br><br><button onclick="command('camera','BU','%05')">30/2s</button><br><br><button onclick="command('camera','BU','%06')">30/3s</button><br><br></td></tr><tr><td>Delete files</td></tr><tr><td> <button onclick="command('camera','DL','')">Delete Last File</button><br><br><button onclick="command('camera','DA',')">Delete All </button><br><br></td></tr></table></div>
 <div id="goproversion"><iframe src="http://10.5.5.9:8080/videos/MISC/version.txt" width="100%" height="100%"></iframe></div>			   
-     
+     <script>
+        if ((navigator.userAgent.match(/mobile/i))) {
+  document.getElementById("content").innerHTML = document.getElementById("content2").innerHTML;
+}
+  </script>  
 </body>
 
 </html>
